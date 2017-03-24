@@ -57,6 +57,12 @@ class NewsfeedsRouter extends JComponentRouterView
 		if ($category)
 		{
 			$path = array_reverse($category->getPath(), true);
+
+			if (!count($path))
+			{
+				$path[$category->id] = $category->slug;
+			}
+
 			$path[0] = '1:root';
 
 			if ($this->noIDs)

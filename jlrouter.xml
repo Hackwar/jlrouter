@@ -7,13 +7,16 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>info@joomlager.de</authorEmail>
 	<authorUrl>www.joomlager.de</authorUrl>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<description>PLG_SYSTEM_JLROUTER_XML_DESCRIPTION</description>
 	<files>
 		<filename plugin="jlrouter">jlrouter.php</filename>
 		<folder>classes</folder>
 		<folder>language</folder>
 	</files>
+	<updateservers>
+		<server name="Joomlager Router" type="collection">https://www.joomlager.de/updates/updates.xml</server>
+	</updateservers>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
