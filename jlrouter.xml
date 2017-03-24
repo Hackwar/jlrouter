@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>plg_system_jlrouter</name>
+	<author>Hannes Papenberg</author>
+	<creationDate>March 2017</creationDate>
+	<copyright>Copyright (C) 2017 Hannes Papenberg. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@joomlager.de</authorEmail>
+	<authorUrl>www.joomlager.de</authorUrl>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_JLROUTER_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="jlrouter">jlrouter.php</filename>
+		<folder>classes</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="router_contact"
+					type="radio"
+					label="PLG_SYSTEM_JLROUTER_FIELD_ROUTER_CONTACT_LABEL"
+					description="PLG_SYSTEM_JLROUTER_FIELD_ROUTER_CONTACT_DESC"
+					default="0"
+					class="btn-group btn-group-yesno"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="contact_noids"
+					type="radio"
+					label="PLG_SYSTEM_JLROUTER_FIELD_CONTACT_NOIDS_LABEL"
+					description="PLG_SYSTEM_JLROUTER_FIELD_CONTACT_NOIDS_DESC"
+					default="0"
+					class="btn-group btn-group-yesno"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="router_content"
+					type="radio"
+					label="PLG_SYSTEM_JLROUTER_FIELD_ROUTER_CONTENT_LABEL"
+					description="PLG_SYSTEM_JLROUTER_FIELD_ROUTER_CONTENT_DESC"
+					default="0"
+					class="btn-group btn-group-yesno"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="content_noids"
+					type="radio"
+					label="PLG_SYSTEM_JLROUTER_FIELD_CONTENT_NOIDS_LABEL"
+					description="PLG_SYSTEM_JLROUTER_FIELD_CONTENT_NOIDS_DESC"
+					default="0"
+					class="btn-group btn-group-yesno"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="router_newsfeed"
+					type="radio"
+					label="PLG_SYSTEM_JLROUTER_FIELD_ROUTER_NEWSFEED_LABEL"
+					description="PLG_SYSTEM_JLROUTER_FIELD_ROUTER_NEWSFEED_DESC"
+					default="0"
+					class="btn-group btn-group-yesno"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="newsfeed_noids"
+					type="radio"
+					label="PLG_SYSTEM_JLROUTER_FIELD_NEWSFEED_NOIDS_LABEL"
+					description="PLG_SYSTEM_JLROUTER_FIELD_NEWSFEED_NOIDS_DESC"
+					default="0"
+					class="btn-group btn-group-yesno"
+					>
+					<option value="1">JENABLED</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="404handling"
+					type="list"
+					label="PLG_SYSTEM_JLROUTER_FIELD_404HANDLING_LABEL"
+					description="PLG_SYSTEM_JLROUTER_FIELD_404HANDLING_DESC"
+					default="0"
+					>
+					<option value="0">PLG_SYSTEM_JLROUTER_FIELD_VALUE_NO_404_HANDLING</option>
+					<option value="1">PLG_SYSTEM_JLROUTER_FIELD_VALUE_MODERN_404_HANDLING</option>
+					<option value="2">PLG_SYSTEM_JLROUTER_VALUE_STRICT_404_HANDLING</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
