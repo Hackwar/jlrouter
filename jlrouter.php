@@ -10,8 +10,10 @@ defined('_JEXEC') or die;
 
 class PlgSystemJlrouter extends JPlugin
 {
-	public function onAfterInitialise()
+	public function construct(&$subject, $config = array())
 	{
+		parent::__construct($subject, $config);
+
 		$app = JFactory::getApplication();
 
 		if ($app->isAdmin())
